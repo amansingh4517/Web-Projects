@@ -1,0 +1,896 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Mona Sans", serif;
+
+    a {
+        color: black;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: white;
+}
+
+
+nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2.5vw;
+    font-weight: 600;
+    font-size: 0.9vmax;
+
+}
+
+nav a:hover {
+    color: gray;
+}
+
+nav #left,
+#right {
+    display: flex;
+    gap: 2.9vmax;
+}
+
+nav #left i {
+    display: none;
+}
+
+nav #left img {
+    height: 2vmax;
+}
+
+nav #right {
+    font-size: 0.9vmax;
+    gap: 0.3vmax;
+    font-weight: 700;
+}
+
+nav #right :nth-child(1) {
+    padding: 0.9vmax 1.5vmax;
+}
+
+nav #right :nth-child(2) {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.9vmax 1.5vmax;
+    border-radius: 30px;
+
+    :hover {
+        background-color: rgb(48, 48, 48);
+    }
+}
+
+nav #right :nth-child(2):hover {
+    background-color: rgb(108, 107, 107);
+}
+
+
+#landing {
+    /* background-color: aquamarine; */
+    width: 100%;
+    padding: 3vmax;
+    height: max-content;
+    gap: 2vmax;
+    display: grid;
+    text-align: center;
+}
+
+#landing :nth-child(1n) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing h1 {
+    /* background-color: bisque; */
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+    font-size: 4.5vmax;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+#landing h4 {
+    /* background-color: rgb(220, 151, 66); */
+    font-size: 1.16vmax;
+    font-weight: 400;
+}
+
+#landing form {
+    position: relative;
+    justify-self: center;
+    width: 45%;
+    height: 3vmax;
+    border-radius: 30px;
+}
+
+#landing form span{
+    left: 5%;
+    color: rgba(128, 128, 128, 0.374);
+    position: absolute;
+    font-size: 1vmax;
+}
+
+#landing form div {
+    right: 7px;
+    display: flex;
+    gap: 1vmax;
+    position: absolute;
+    font-size: 1.3vmax;
+}
+
+#landing form h4 {
+    font-weight: 500;
+    font-size: 1vmax;
+}
+
+#landing form #search {
+    background-color: rgb(230, 48, 109);
+    color: white;
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border-radius: 50%;
+}
+
+#landing form input {
+
+    width: 100%;
+    background-color: #f3f3f6;
+    height: 100%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+
+#landing form input:hover {
+    background-color: white;
+    border: 3px solid rgb(252 231 239);
+
+}
+
+#landing #tags {
+    /* background-color: rgb(99, 118, 96); */
+    font-size: 0.8vmax;
+    gap: 1vw;
+
+}
+
+#landing #tags h3 {
+    border-radius: 30px;
+    background-color: #f3f3f6;
+    padding: 3px 1vw;
+    font-weight: 400;
+}
+
+#landing #tags :first-child {
+    color: gray;
+    background-color: white;
+}
+
+#tags2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* overflow-x: auto; */
+    width: 100%;
+    padding: 3vmax 0vmax;
+
+}
+
+#tags2>h3 {
+    font-weight: 400;
+    font-size: 1vmax;
+    padding: 0.5vw 1vw;
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+#tags2>h3:first-child {
+    border-radius: 5px;
+}
+
+#tags2 h3 i {
+    font-weight: 700;
+
+}
+
+#tags2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmax;
+    font-weight: 400;
+}
+
+#tags2 div h3 {
+    font-weight: 600;
+    font-size: 1vmax;
+}
+
+main {
+    width: 100%;
+    height: max-content;
+    padding: 0vw 2.5vw;
+    /* border: 2px solid red; */
+    display: grid;
+    gap: 2vmax;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+
+    position: relative;
+}
+
+
+
+main .card {
+    height: fit-content;
+    display: flex;
+    margin: 0vmax 1vmax;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    flex-shrink: 0;
+}
+
+main .card .img {
+
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    position: relative;
+
+    background-color: rgb(108, 218, 108);
+    overflow: hidden;
+}
+
+main .card .img:hover video {
+    z-index: 99;
+}
+
+main .card .img img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    object-fit: cover;
+
+}
+
+main .card .img video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    object-fit: cover;
+}
+
+main .card .anime {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 1vw;
+    bottom: -40%;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.803));
+
+
+}
+
+main .card .img:hover .anime {
+    z-index: 99;
+    animation-name: anime;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-delay: 0.2ms;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes anime {
+    from {
+        bottom: -40%;
+    }
+
+    to {
+        bottom: 0%;
+    }
+
+}
+
+main .card .anime h3 {
+    color: white;
+    font-weight: 500;
+}
+
+main .card .anime i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.8vw;
+    font-weight: 400;
+    font-size: 1.1vmax;
+
+}
+
+main .card .bio {
+    margin-top: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 50% 15% 10% 10%;
+    place-items: center;
+    width: 90%;
+    height: 15%;
+    color: gray;
+    overflow: hidden;
+}
+
+main .card .bio:hover {
+    overflow: visible;
+
+}
+
+main .card .bio>:nth-child(1n) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card .bio>:nth-child(1n):hover {
+    cursor: pointer;
+}
+
+main .card .bio .pp {
+
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main .card .bio .pp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+main .card .bio .name {
+    color: #000;
+    /* for hidding text effect */
+    width: 100%;
+    font-size: 1.1vmax;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+
+}
+
+main .card .bio>h3 {
+    background-color: rgb(207, 207, 207);
+    color: white;
+    border-radius: 5px;
+    font-size: 1vmax;
+    height: 40%;
+    font-size: 0.7vmax;
+    padding: 5px;
+}
+
+main .card .bio>h3:hover {
+    background-color: rgb(0, 0, 0);
+
+}
+
+main .card .bio .like {
+    font-size: 1.3vmax;
+}
+
+main .card .bio .like:hover {
+    color: pink;
+}
+
+main .card .bio .view {
+    font-size: 1.3vmax;
+}
+
+main .card .bio .view:hover {
+    cursor: default;
+}
+
+main .card .bio .expand {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 2vw;
+    z-index: 100;
+    clip-path: polygon(0 0, 0 96%, 4% 100%, 8% 96%, 100% 96%, 100% 0);
+    border-radius: 20px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(212, 212, 212));
+    width: 25vmax;
+    height: 14vmax;
+    bottom: 100%;
+    left: 2%;
+}
+
+
+main .card .bio .expand .channel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    height: 40%;
+    width: 100%;
+
+}
+
+main .card .bio .expand .channel .epp {
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+main .card .bio .expand .channel .ename {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-weight: 100;
+    height: 100%;
+    width: 60%;
+}
+
+main .card .bio .expand .channel .ename h2 {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+main .card .bio .expand .channel .ename h3 {
+    font-size: 0.9vw;
+    font-weight: 400;
+    color: gray;
+
+}
+
+main .card .bio .expand .channel>h3 {
+    display: flex;
+    padding: 1vw 2vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6vmax;
+    border-radius: 15px;
+    border: 1px solid rgb(173, 173, 173);
+    height: 50%;
+    width: 15%;
+    color: #000;
+}
+
+main .card .bio .expand .content {
+    display: flex;
+    height: 60%;
+    width: 100%;
+
+}
+
+main .card .bio .expand .content img {
+    padding: 10px;
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#slide #sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slide #sign h3 {
+    background-color: black;
+    color: white;
+    padding: 0.7vmax 1vmax;
+    border-radius: 30px;
+    font-size: 0.9vmax;
+    margin-top: 3vh;
+}
+
+#slide #move {
+    overflow-x: auto;
+    /* animation: anime2 10s linear 0.2 infinite alternate normal; */
+
+
+}
+
+#slide #scroll {
+    display: grid;
+    grid-auto-columns: min-content;
+    gap:20px;
+    grid-auto-flow: column;
+    width: fit-content;
+
+    animation-name: anime2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#slide #scroll:hover {
+    animation-play-state: paused;
+}
+@keyframes anime2 {
+    to {
+        transform: translateX(-50%);
+    }
+
+    from {
+        transform: translateX(0);
+    }
+    
+}
+#slide #move .card2-duplicate {
+    /* display: none; */
+}
+
+#slide #move::-webkit-scrollbar {
+    display: none;
+}
+
+#slide #move .card2 {
+    height: 13vmax;
+    width: 15vmax;
+}
+#slide #move .card2 h4 {
+    font-weight: 500;
+    font-size: 1vmax;
+    padding: 2px;
+}
+
+#slide #move .card2 .img2 {
+    height: 85%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#slide #move .card2 .img2 img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+
+
+footer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 5vw;
+}
+
+footer h4,
+h3,
+img {
+    cursor: pointer;
+}
+
+footer #top {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #top img {
+    width: 7vw;
+}
+
+footer #top div {
+    display: flex;
+    gap: 2vw;
+}
+
+footer #top div h3 {
+    font-weight: 500;
+    font-size: 1vmax;
+}
+
+footer #top h4 {
+    display: flex;
+    gap: 1vw;
+    font-size: 1.2vw;
+}
+
+footer #down {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #down div {
+    display: flex;
+    gap: 2vw;
+    color: rgb(88, 88, 88);
+    align-items: center;
+}
+
+footer #down div h4 {
+    font-size: 1vmax;
+    font-weight: 300;
+}
+
+
+@media (max-width:700px) {
+
+
+    nav {
+        height: 9%;
+        padding: 0vw 3vmax;
+    }
+
+    nav #left {
+        gap: 8px
+    }
+
+    nav #left i {
+        display: initial;
+        font-size: 2.3vmax;
+    }
+
+    nav #left a {
+        display: none;
+    }
+
+    nav #right {
+        font-size: 1.5vmax;
+    }
+
+    nav #right :nth-child(2) {
+        padding: 0.9vw 3vw;
+    }
+
+    #landing {
+        gap: 3vmax;
+    }
+
+    #landing h4 {
+        font-size: 1.7vmax;
+    }
+
+    #landing form {
+        width: 70%;
+        height: 4vmax;
+    }
+
+    #landing form input:hover {
+        border: 2px solid rgb(252 231 239);
+
+    }
+
+    #landing #tags {
+        overflow-x: auto;
+        font-size: 1vmax;
+
+    }
+
+    #landing #tags::-webkit-scrollbar {
+        display: none;
+
+    }
+
+    #landing #tags h3 {
+        text-wrap: nowrap;
+    }
+
+    #tags2 {
+        gap: 1.5vmax;
+        flex-wrap: wrap;
+    }
+
+    #tags2>h3 {
+        font-size: 1.3vmax;
+    }
+
+    #tags2 div {
+        flex-wrap: wrap;
+
+    }
+
+    #tags2 div::-webkit-scrollbar {
+        display: none;
+    }
+
+    main .card .img {
+        height: 13rem;
+    }
+
+    main .card .anime i {
+        font-size: 3vmax;
+
+    }
+
+
+    main .card .bio {
+        margin-top: 5px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 15% 50% 15% 10% 10%;
+        place-items: center;
+        width: 90%;
+        height: 4vmax;
+        color: gray;
+        overflow: hidden;
+    }
+
+    main .card .bio:hover {
+        overflow: visible;
+    }
+
+    main .card .bio>:nth-child(1n) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .card .bio>:nth-child(1n):hover {
+        cursor: pointer;
+    }
+
+    main .card .bio .pp {
+        width: 4vmax;
+        height: 4vmax;
+    }
+
+
+    main .card .bio .name {
+        font-size: 1.7vmax;
+        display: block;
+
+    }
+
+    main .card .bio>h3 {
+        height: 70%;
+        font-size: 1.4vmax;
+    }
+
+    main .card .bio .like {
+        font-size: 1.7vmax;
+    }
+
+    main .card .bio .view {
+        font-size: 1.7vmax;
+    }
+
+    main .card .bio .expand {
+        width: 30vmax;
+        height: 18vmax;
+    }
+
+
+    main .card .bio .expand .channel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        height: 40%;
+        width: 100%;
+
+    }
+
+    main .card .bio .expand .channel .epp {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    main .card .bio .expand .channel .ename h2 {
+        font-size: 1.8vw;
+        font-weight: 700;
+    }
+
+    main .card .bio .expand .channel .ename h3 {
+        font-size: 1.3vw;
+        font-weight: 700;
+    }
+
+
+
+    main .card .bio .expand .content {
+        display: flex;
+        height: 60%;
+        width: 100%;
+    }
+
+    main .card .bio .expand .content img {
+        width: 36%;
+    }
+
+    #slide {
+        height: 40%;
+    
+    }
+
+    
+    #slide #sign h3 {
+        padding: 1vmax 1.5vmax;
+        font-size: 1.5vmax;
+    }
+
+    
+    #slide #move .card2 {
+        height: 17vmax;
+        width: 19vmax;
+    }
+    #slide #move .card2 h4 {
+        font-size: 1.5vmax;
+    }
+
+    footer {
+        height: 30%;
+        flex-direction: column;
+    }
+
+    footer #top {
+        flex-direction: column;
+    }
+
+    footer #top img {
+        width: 18vw;
+    }
+
+    footer #top div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1vmax 3vmax;
+    }
+
+    footer #top div h3 {
+        font-size: 1.2vmax;
+    }
+
+    footer #top h4 {
+        gap: 7vw;
+        font-size: 3.5vw;
+    }
+
+    footer #down {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vmax;
+    }
+
+    footer #down div h4 {
+        font-size: 1.3vmax;
+        font-weight: 400;
+    }
+}

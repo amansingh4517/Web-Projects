@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page" id="Q0">
+        <h3>PRACTICE QUESTIONS</h3>
+        <ol>
+            <li>Create an HTML page with a button. When the button is clicked, change the text of a paragraph element.</li>
+            <li>Create a page with two images and a button. When the button is clicked, swap the source attribute of the images.</li>
+            <li>Create a form with input fields and a submit button. Use JavaScript to validate the form and display an error message if the input is invalid.</li>
+            <li>Create an unordered list. Allow users to add and remove list items dynamically using buttons.</li>
+            <li>Build a countdown timer that starts when a button is clicked and updates the display in real-time.</li>
+            <li>Create a tabbed interface where clicking on tabs displays different content sections without page reload.</li>
+            <li>Display a progress bar that updates in real-time, showing the progress of a task, download, or form submission.</li>
+            <li>Create a search bar that displays live search results as users type, updating the results without requiring a full page reload.</li>
+            <li>Build a character counter for a text area or input field, which updates in real-time as the user types and enforces a character limit.</li>
+            <li>Show a progress bar which shows how much page has been scrolled.</li>
+          </ol>
+    </div>
+
+    <div class="page" id="Q1">
+        <p>Hi, I am para and i have to change on click</p>
+        <button id="btn1">click me</button>
+    </div>
+
+    <div class="page" id="Q2">
+        <div id="img-div">
+            <img id="img1"
+                src="https://images.unsplash.com/photo-1739980873302-b93d3bd4991e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                alt="">
+            <img id="img2"
+                src="https://plus.unsplash.com/premium_photo-1740013836898-d550e5a5df89?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+                alt="">
+        </div>
+        <button id="btn2">swap me</button>
+    </div>
+
+    <div class="page" id="Q3">
+        <form id="q3-form" action="">
+            <input class="q3-input" type="text" placeholder="enter something to avoid error while submiting">
+            <input class="q3-input" type="text" placeholder="enter something to avoid error while submiting">
+            <input class="q3-input" type="text" placeholder="enter something to avoid error while submiting">
+            <h3></h3>
+            <button class="btn3">Submit</button>
+        </form>
+
+    </div>
+
+    <div class="page" id="Q4">
+        <div class="q4-card">
+            <ul>
+                <li>Apple</li>
+            </ul>
+        </div>
+        <input id="inpt_4" type="text" placeholder="Enter the Item">
+        <button id="add">Add</button>
+        <button id="remove">Remove</button>
+
+    </div>
+
+    <div class="page" id="Q5">
+        <h1>0</h1>
+        <span>
+            <button class="btn5" id="btn5_start">START</button>
+            <button class="btn5" id="btn5_stop">STOP</button>
+        </span>
+    </div>
+
+    <div class="page" id="Q6">
+        <div id="q6-nav">
+            <h3>Home</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+        </div>
+        <div id="q6-content">
+            <p id="q6-home">THIS IS HOME Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti assumenda ea
+                recusandae fugit aliquam ullam animi voluptatum possimus quis, enim quasi rem ipsa illum natus illo
+                labore suscipit, error officiis est inventore officia reiciendis neque earum consectetur! Soluta quasi
+                cupiditate temporibus, repellat deleniti commodi aspernatur fuga pariatur quibusdam mollitia dicta
+                praesentium velit explicabo labore. Eum perferendis eaque nesciunt dignissimos mollitia nemo atque sint
+                fuga amet non repudiandae reprehenderit hic praesentium autem repellendus quisquam dolore, rem iste, cum
+                sequi quasi ratione facilis dolorum. Blanditiis doloribus animi cum sunt ipsa, rem doloremque nam
+                perferendis fugit voluptas labore dicta eius culpa id. Expedita libero laboriosam mollitia, odio cum
+                officia ut autem error unde, ex quia, quo soluta illo vitae adipisci nesciunt. Enim, perspiciatis quidem
+                alias quasi tempore unde totam sapiente nobis ipsa? Ipsa dicta repellat repudiandae animi, cupiditate
+                commodi vitae fuga nesciunt quis nemo vero aperiam quaerat, reprehenderit laborum rerum porro vel amet
+                eveniet quos autem? Suscipit sunt non exercitationem quasi alias explicabo qui totam nesciunt nemo
+                nostrum? Totam voluptates qui soluta id assumenda exercitationem autem perferendis nam enim laborum.
+                Dolor reprehenderit nihil earum ex provident repellendus quia culpa, id ab temporibus repellat deserunt
+                ipsam asperiores sunt dolorum totam at fuga, a odit!</p>
+            <p id="q6-about">THIS IS ABOUT Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur
+                molestias, non reprehenderit quas nemo velit omnis dolores nisi? Deserunt minus doloribus fuga
+                aspernatur corporis repellat veniam magni laboriosam repellendus, similique facilis vitae ea quaerat,
+                excepturi sequi neque omnis suscipit odio delectus reprehenderit sapiente? Eius velit beatae mollitia
+                corporis? Doloremque non, eos vero alias provident esse. Dolorem mollitia labore voluptas reprehenderit
+                incidunt ullam quibusdam aut corporis provident praesentium culpa deleniti sit unde commodi, dicta
+                cupiditate maiores! Ipsum sapiente aperiam ducimus excepturi harum minima cupiditate! Exercitationem
+                commodi voluptates reprehenderit veritatis? Quos voluptatibus iusto ea, eum amet voluptas quas eos. Cum
+                reprehenderit eligendi quibusdam, quo fuga ratione magni at mollitia nostrum tempora fugiat tempore
+                nisi, suscipit error inventore modi magnam eos ipsa. Adipisci eaque necessitatibus cumque, nesciunt
+                iure, voluptate maiores quod voluptatum dolores nostrum, magni ullam nobis possimus dicta sapiente
+                officia veniam deleniti. Assumenda suscipit alias libero quae a tempore aliquam rem vero molestiae. Et
+                harum minus, hic quidem in autem adipisci repudiandae, inventore amet a assumenda, molestiae tempore
+                ullam nisi minima. Dicta saepe nobis labore blanditiis. Laborum culpa, tempora repellat nam eum porro
+                quibusdam nemo perferendis blanditiis? Mollitia nemo consequuntur alias nesciunt deleniti, vero deserunt
+                fuga a quis sed eum molestiae asperiores. Qui atque dolor iure magni autem distinctio facilis obcaecati
+                ab error illo. Temporibus tempora vero aliquam fuga culpa, cumque alias deserunt repellendus eum illum
+                sequi, quia placeat ipsa minus voluptates facere voluptas voluptate numquam laborum cupiditate quis?
+                Inventore nostrum fuga, sed alias illo voluptatibus consequatur. Saepe obcaecati libero aliquam laborum
+                rem nihil! Ipsum aut culpa suscipit harum est tempora consequatur recusandae ipsam doloremque voluptatum
+                nostrum corporis, repellat eius reiciendis laudantium at. Maxime nostrum, error quisquam recusandae
+                atque accusamus id sit, obcaecati explicabo quos reiciendis impedit. Hic, harum neque maiores illum ab
+                sit eum repellendus, eius minima quam facilis saepe!</p>
+            <p id="q6-contact">THIS IS CONTACT Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam illum
+                repellendus esse eum adipisci necessitatibus iusto, quos officiis nobis placeat ipsam perspiciatis
+                similique eos, blanditiis minima dolorum inventore natus maxime voluptate quisquam, porro fuga nostrum
+                delectus! Cum architecto sit tenetur soluta, maxime ab necessitatibus non aut dolorem officiis sapiente
+                voluptatem ipsam sint aperiam quo ullam quos placeat sed at id? Nesciunt, ipsa dolorum et libero ut
+                consequatur quasi obcaecati cum aliquam, qui ratione veritatis magni impedit officia est. Repudiandae
+                fuga nostrum, architecto tempore maiores, quidem saepe veritatis placeat consequuntur nihil molestias
+                ducimus temporibus dolores quasi assumenda expedita. Aliquam, veritatis quos!</p>
+        </div>
+
+
+    </div>
+
+    <div class="page" id="Q7">
+        <div id="download">
+            <div id="progress"></div>
+        </div>
+        <button type="button" class="d-btn">
+            <span class="button__text">Download</span>
+            <span class="button__icon"><svg class="svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307"
+                    viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                    </path>
+                    <path
+                        d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                    </path>
+                    <path
+                        d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                    </path>
+                </svg></span>
+        </button>
+
+    </div>
+
+    <div class="page" id="Q8">
+        <input type="text" placeholder="Find person">
+        <div id="person">
+        </div>
+
+
+    </div>
+
+    <div class="page" id="Q9">
+        <h3>Character count : <span id="counter"></span></h3>
+        <textarea rows="5" cols="40" placeholder="Write something"></textarea>
+    </div>
+
+    <div class="page" id="Q10">
+        <div id="inside">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

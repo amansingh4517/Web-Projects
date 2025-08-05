@@ -1,0 +1,607 @@
+:root {
+    --bg-color: #151515;
+    --white-text: #FFFFFF;
+    --gold: #FFA63D;
+    --blue: #0057B4;
+    /* --yellow :; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white-text);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--bg-color);
+    font-family: "plain light";
+    /* overflow-x: hidden; */
+
+}
+
+#crsr {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    z-index: 999;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+/* we have to show loader page for few second show in that time all the animation can load */
+#loader {
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    background-color: black;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7vw;
+    letter-spacing: 3px;
+    gap: 2px;
+
+    .line {
+        overflow: hidden;
+        /* background-color: #FFA63D; */
+    }
+
+
+    #counter {
+        font-size: 3.5vw;
+        font-family: "silk serif light";
+    }
+
+}
+
+#loader>.line:nth-child(1) {
+    display: flex;
+
+    #counter {
+        width: 20vw;
+    }
+}
+
+#loader>.line:nth-child(3) {
+    display: flex;
+}
+
+#loader>.line:nth-child(3) span h1 {
+    /* background-color: #FFA63D; */
+    height: min-content;
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding: 0;
+
+}
+
+@keyframes anime1 {
+    0% {
+        font-family: "plain light";
+        color: var(--white-text);
+    }
+
+    100% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 0.1px white;
+        color: transparent;
+    }
+
+}
+
+
+#main {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    background-color: transparent;
+    width: 100%;
+    height: 8vw;
+    /* background-color: #FFA63D; */
+
+
+    #left {
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7vw;
+
+    }
+
+    #center {
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        font-size: 1.1vw;
+    }
+
+    #right {
+        grid-column: 3;
+        font-size: 1vw;
+        ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        font-family: 'plain';
+
+
+    }
+
+}
+
+#page1 {
+    /* background-color: #FFA63D; */
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    margin-bottom: 9vw;
+
+
+    .hero {
+        margin-top: 10vh;
+        height: 90%;
+        width: max-content;
+        margin-left: 30%;
+        font-size: 3.7vw;
+        /* background-color: #FFA63D; */
+        display: flex;
+        flex-direction: column;
+
+        div {
+            overflow: hidden;
+        }
+
+
+    }
+
+    .hero>div:nth-child(3) h1 span {
+        text-decoration: underline;
+    }
+
+}
+
+#page2 {
+    height: fit-content;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 9vw;
+
+    div {
+        height: 75%;
+        width: 70%;
+        background-image: url("https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: rgb(244, 0, 0);
+
+
+        video {
+            width: 100%;
+            opacity: 0;
+
+        }
+    }
+
+}
+
+#page3 {
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    /* background-color: rgb(68, 68, 68); */
+
+    #project {
+        width: 70%;
+        height: fit-content;
+        justify-self: end;
+        margin-bottom: 8vw;
+
+        h1 {
+            font-size: 7vw;
+            text-transform: uppercase;
+        }
+
+        hr {
+            margin-top: 3vw;
+        }
+    }
+
+    #long {
+        /* height; */
+        position: relative;
+        width: 100%;
+        padding: 0vw 5vw;
+        display: grid;
+        grid-template-columns: 27% 35% 38%;
+        /* grid-template-columns: repeat(3,1fr);    */
+        grid-gap: 25px;
+
+        h1 {
+            font-size: 2.6vw;
+            font-weight: 600;
+            margin-bottom: 3vw;
+        }
+
+        hr {
+            margin-bottom: 5vw;
+        }
+
+        .left-img {
+            width: 100%;
+            height: 29vw;
+            /* background-color: #0057B4; */
+            background-image: url(https://obys.agency/wp-content/uploads/2023/08/Olga_Prudka_1.png);
+            background-size: cover;
+        }
+
+        .center-img {
+            width: 100%;
+            height: 35vw;
+            /* background-color: #0057B4; */
+            background-image: url(https://obys.agency/wp-content/uploads/2024/02/AIM-1.png);
+            background-size: cover;
+        }
+
+        .right-img {
+            width: 100%;
+            height: 35vw;
+            /* background-color: #0057B4; */
+            background-image: url(https://obys.agency/wp-content/uploads/2023/08/Laxer_1-2.png);
+            background-size: cover;
+        }
+
+        .description {
+            margin-top: 1.5vw;
+            margin-bottom: 1.5vw;
+            display: flex;
+            font-size: 1vw;
+            font-weight: 100;
+            justify-content: space-between;
+        }
+
+        div .crl {
+            background-color: var(--bg-color);
+            border: 1px solid white;
+            width: 22vw;
+            height: 22vw;
+            border-radius: 50%;         
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 26vw;
+
+
+            i {
+                font-size: 12vw;
+                -webkit-text-stroke: 1.5px white;
+                font-weight: 200;
+                color: transparent;
+            }
+
+        }
+
+        >div:nth-child(1) .crl {
+            margin-top: 15vw;
+            margin-bottom: 20vw;
+        }
+
+        >div:nth-child(2) .crl {
+            margin-top: 12vw;
+        }
+
+        >div:nth-child(2) > hr:nth-child(8) {
+            margin-bottom: vw;
+        }
+
+        >div:nth-child(3) .crl {
+        }
+        
+    }
+}
+
+
+#page4 {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+
+
+    .seven {
+        width: 70%;
+        min-height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+
+        padding-right: 50px;
+
+        h1 {
+            font-size: 7vw;
+            padding: 3vw 0vw;
+        }
+    }
+
+    .seven div:first-child {
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+
+    .seven>pre:nth-child(2) {
+
+        font-size: 2.2vw;
+        padding: 2vw 0vw;
+        font-family: "plain";
+    }
+
+    #about-img {
+        display: flex;
+        height: 70vw;
+        width: 65vw;
+        padding: 3vw 0vw;
+        padding-right: 4vw;
+
+        pre {
+            font-size: 1vw;
+            padding: 0vw 3vw;
+            font-family: "plain";
+
+        }
+
+        #bg-img {
+            position: relative;
+            width: 60%;
+            height: 70%;
+            border: 2px solid #151515;
+            background-image: url(https://obys.agency/wp-content/uploads/2020/07/content-image01.jpg);
+            background-size: cover;
+        }
+    }
+
+
+
+    #list-box {
+        position: absolute;
+        top: 60%;
+        right: -70%;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        align-content: center;
+        justify-content: center;
+        background-color: #0057B4;
+        padding: 2vw;
+
+
+        div {
+            /* background-color: aquamarine; */
+            display: flex;
+            /* justify-content: start;
+            align-content: center; */
+            flex-direction: column;
+            /* padding: 1vw 3vw; */
+
+            .item {
+                /* background-color: #FFA63D; */
+                display: blo;
+                flex-direction: row;
+                justify-content: space-between;
+
+                align-items: center;
+
+                h4 {
+                    width: 50%;
+                    font-weight: 300;
+                    font-size: 1vw;
+                    /* align-self: self-end; */
+                    width: 40%;
+                    /* background-color: chartreuse; */
+
+                }
+
+                h2 {
+                    /* background-color: antiquewhite; */
+                    font-weight: 300;
+                    font-size: 2vw;
+                    width: 50%;
+
+                }
+
+            }
+
+            hr {
+                margin: 2vw;
+                width: 100%;
+                align-self: center;
+            }
+
+        }
+
+    }
+}
+
+#page5>:first-child {
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-self: end;
+    flex-direction: column;
+    width: 70%;
+}
+
+#page5 {
+    /* background-color: #FFA63D; */
+    overflow: hidden;
+    margin-top: 6vw;
+
+    hr {
+        margin-bottom: 3vw;
+    }
+
+    h5 {
+        font-size: 1vw;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+
+    #marque {
+        display: flex;
+        flex-direction: column;
+        /* background-color: #ecc9a2; */
+        margin-top: 6vw;
+        flex-shrink: 0;
+
+        #left {
+            /* background-color: #0057B4; */
+            display: inline-block;
+            white-space: nowrap;
+            overflow-x: hidden;
+            animation-name: anime-left;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #right {
+            /* background-color: #729cc8; */
+            display: inline-block;
+            white-space: nowrap;
+            overflow-x: hidden;
+
+        }
+    }
+
+    #left h1 {
+        animation-name: anime-left;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .move {
+        font-size: 8vw;
+        text-transform: uppercase;
+        display: inline-block;
+        /* flex-shrink: 0; */
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        color: transparent;
+        font-weight: 400;
+        letter-spacing: 4px;
+
+    }
+
+    .move-duplicate {
+        margin-left: 16px;
+    }
+}
+
+@keyframes anime-left {
+    to {
+        transform: translateX(0);
+    }
+
+    from {
+        transform: translateX(cal(-100% - 20px));
+    }
+
+}
+
+@keyframes anime-right {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(cal(-100% - 20px));
+    }
+
+}
+
+#page6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: cadetblue; */
+    min-height: fit-content;
+    width: 70%;
+    justify-self: end;
+    margin-top: 7vw;
+
+    h1 {
+        font-size: 7vw;
+        text-transform: uppercase;
+    }
+
+    #center {
+        /* background-color: #FFA63D; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Using 1fr is often better with gaps */
+        grid-gap: 10px;
+        /* Or column-gap */
+        height: 70%;
+    }
+
+    .last {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            /* background-color: rgb(183, 228, 213); */
+            margin-bottom: 2vw;
+            font-size: 1vw;
+            font-weight: 900;
+        }
+
+        a {
+            font-size: 1.7vw;
+            font-weight: 500;
+        }
+
+        h4 {
+            font-size: 1.7vw;
+            font-weight: 500;
+        }
+    }
+
+    hr {
+        margin: 6vw 0vw 3vw 0vw;
+    }
+
+    h4 {
+        font-size: 1.2vw;
+        font-weight: 500;
+        margin-bottom: 2vw;
+    }
+
+
+}
